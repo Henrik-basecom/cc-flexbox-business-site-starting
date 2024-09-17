@@ -91,14 +91,80 @@ nav a:hover {
 }
 
 /* Main */
+main {
+  margin-top: 50px;
+  padding: 0 50px;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+.main-container {
+  padding: 15px;
+  box-shadow: 5px 5px 15px 5px #2e3138;
+  border-radius: 15px;
+}
+
+.about {
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.content {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+
+.feature-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 5px;
+}
+
+.feature-products figure {
+  width: 300px;
+}
+
 .feature-products figure img {
   height: 200px;
   width: 300px;
 }
 
-.personal figure img {
+.feature-products figcaption {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.personal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+}
+
+.card figcaption {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.card img {
   height: 200px;
   width: auto;
+  border: 5px solid var(--COLOR-THIRD);
+  border-radius: 50%;
 }
 /* Footer */
 
