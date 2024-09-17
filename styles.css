@@ -27,12 +27,17 @@ body {
   height: 100vh;
   background-color: var(--COLOR-MAIN);
   color: var(--COLOR-THIRD);
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
 header {
   height: 300px;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  top: 0;
 
   display: flex;
   align-items: center;
@@ -41,6 +46,7 @@ header {
 header figure {
   height: 300px;
   width: 300px;
+  z-index: 1;
   position: absolute;
   left: 50px;
 
@@ -53,15 +59,21 @@ header figure {
 }
 
 header figcaption {
+  color: var(--COLOR-MAIN);
+  font-size: 2rem;
+  font-weight: 900;
   position: absolute;
   bottom: 15%;
 }
 
 nav {
-  background-color: var(--COLOR-SECOND);
   height: 200px;
   width: 100%;
   padding-left: 400px;
+
+  background: rgba(245, 133, 63, 0.4);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(245, 133, 63, 0.2);
 }
 
 nav ul {
@@ -92,7 +104,7 @@ nav a:hover {
 
 /* Main */
 main {
-  margin-top: 50px;
+  margin-top: 350px;
   padding: 0 50px;
   display: flex;
   align-items: start;
@@ -167,5 +179,13 @@ main {
   border-radius: 50%;
 }
 /* Footer */
+
+footer {
+  margin-top: 20px;
+  max-height: 100px;
+  min-height: 100px;
+  background-color: var(--COLOR-SECOND);
+  color: var(--COLOR-MAIN);
+}
 
 /* Responsive */
